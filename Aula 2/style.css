@@ -1,0 +1,150 @@
+
+.caixa{
+	border: 1px solid black;
+	/*background-color: lightgray;*/
+	width: 100vw;
+	height: 70vh;
+
+	display: grid;
+	grid-template-areas: "cima cima" "i t";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 2fr 1fr;
+}
+
+.cabecalho{
+	background-color: lightblue;
+	height: 32vh;
+
+	grid-area: cima;
+}
+
+.imagem{
+	background-color: orange;
+	width: 40vw;
+	height: 30vh;
+	margin-top: -75px;
+
+	grid-area: i;
+}
+
+.texto{
+	background-color: lightgray;
+	margin-left: -55px;
+	margin-top: -75px;	
+	height: 23.4vh;
+	padding: 20px;
+
+	grid-area: t;
+}
+
+@media screen and (min-width: 1024px){
+/* Desktop */
+.caixa{
+	border: 1px solid black;
+	width: 90vw;
+	height: 70vh;
+
+	grid-template-areas: "cima cima" "i t";
+	grid-template-columns: 1fr;
+}
+
+.cabecalho{
+	background-color: lightblue;
+	margin-right: 1px;
+	height: 32vh;
+}
+
+.imagem{
+	background-color: orange;
+	width: 25vw;
+	height: 24.5vh;
+	margin-top: -62px;
+}
+
+.texto{
+	background-color: lightgray;
+	margin-left: 20px;
+	margin-top: -62px;	
+	margin-right: 1px;	
+	height: 17vh;
+	padding: 20px;
+}
+
+}
+
+/* ------------------------------------- */
+
+@media screen and (min-width: 768px,max-width: 1023px){
+/* Desktop */ /* min-width: 768px, */
+.caixa{
+	border: 1px solid black;
+
+	width: 40vw;
+	height: 90vh;
+
+	grid-template-areas: "cima cima" "i t";
+	grid-template-columns: 1fr;
+}
+
+.cabecalho{
+	background-color: lightblue;
+	height: 32vh;
+}
+
+.imagem{
+	background-color: orange;
+	width: 25%;
+	height: 23vh;
+	margin-top: -110px;
+}
+/*
+.texto{
+	background-color: lightgray;
+	margin-left: 20px;
+	margin-top: -130px;	
+	margin-right: 850px;
+	height: 19vh;
+	/*padding: 20px;*/
+}
+
+}
+
+
+/* ------------------------------------- */
+
+
+@media screen and (max-width: 767px){
+/* Smartphone */
+.caixa{
+	border: 1px solid black;
+	width: 70vw;
+	height: 70vh;
+
+	grid-template-areas: "cima" "i" "t";
+	grid-template-columns: 1fr;
+}
+
+.cabecalho{
+	background-color: lightblue;
+	width: 30vw;
+	height: 32vh;
+}
+
+.imagem{
+	background-color: orange;
+	float: left;
+	width: 225px;
+	height: 30vh;
+	margin-top: 5px;
+}
+
+.texto{
+	background-color: lightgray;
+	margin-left: 0px;
+	margin-top: 5px;
+	width: 24.8vw;	
+	height: 23.4vh;
+
+}
+
+}

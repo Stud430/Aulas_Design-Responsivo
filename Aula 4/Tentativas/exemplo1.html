@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Tentativa 1 </title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="2">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+	https://www.youtube.com/watch?v=G590LY1hUik&list=TLPQMTUwMjIwMjPvPc1dqaEOMQ&index=7
+	https://www.youtube.com/watch?v=DDiNrJKjCvM&list=TLPQMTUwMjIwMjPvPc1dqaEOMQ&index=5
+	https://www.youtube.com/watch?v=G8mYjB_sT0o&list=TLPQMTUwMjIwMjPvPc1dqaEOMQ&index=4
+	https://www.youtube.com/watch?v=t-EMinSz_Tk&list=TLPQMTUwMjIwMjPvPc1dqaEOMQ&index=6
+
+	https://www.youtube.com/watch?v=GU4sN7xxHkM&list=TLPQMTUwMjIwMjPvPc1dqaEOMQ&index=8
+	https://www.youtube.com/watch?v=DDiNrJKjCvM&list=TLPQMTUwMjIwMjPvPc1dqaEOMQ&index=5
+-->	
+
+	<style>
+		
+		#menu1,#roda2{
+			background-color: #2c2f40;
+			color: #2c2f40;
+		}
+
+		#menu2,#roda1{
+			background-color: #F0E0D8;
+			color:  #F0E0D8;
+			height: 50px;
+		}
+
+		#roda1{
+			margin-top: 288px;
+		}
+/*
+		.caixaForm{
+			color: black
+			background-color: white;
+			border-radius: 10px;
+			box-shadow: 1px 1px 10px;
+			width: 120px;
+			height: 180px;
+
+			padding: 150px;
+			margin-left: 500px;
+			margin-top: 30px;
+		}
+*/
+		form{
+			font-family: verdana;
+
+			font-size: 13px;
+			/*margin: auto;*/
+			margin-top: 20px;
+			margin-left: 30px;
+			margin-right: 30px; 
+		}
+
+		input{
+			width: 200px;
+			height: 20px;
+			border-radius: 5px;
+		}
+
+		fieldset{		
+			width: 250px;	
+			height: 420px;
+
+			background-color: #2c2f40;
+			color: white;
+
+			border-radius: 8px;
+
+			padding-top: 40px;
+
+			margin-left: 500px;
+			margin-top: 135px;
+			margin-bottom: -80px;
+		}
+
+		legend{
+			font-family: verdana;
+			font-size: 17px;
+
+			/*border-radius: 8px;*/
+
+			background-color: #F0E0D8;
+			color: black;
+
+			/*box-shadow: 5px 5px 25px;*/
+
+			width: 165px;
+			height: 25px;
+
+			margin-left: 38px;
+
+			padding-left: 15px;
+			padding-top: 5px;
+		}
+
+		#btn-img{
+			width: 40px;
+			height: 40px;
+			margin-left: 80px;
+		}
+
+		/* iPad Air */
+		@media screen and (max-width: 820px){
+
+			.caixaForm{
+			color: white;
+			background-color: #2c2f40;
+
+			border-radius: 10px;
+
+			width: 120px;
+			height: 180px;
+
+			padding: 150px;
+			margin-left: 200px;
+			margin-top: 30px;
+		}
+
+
+		}
+
+	</style>
+
+</head>
+
+
+<body>
+
+<header id="menu1"> Menu 1 </header>
+<header id="menu2"> Menu 2 </header>
+
+<div class="caixaForm">
+	<fieldset>
+		<legend> Cadastrar Usuário </legend>
+
+		<form action="" method="GET">
+			<label> Nome </label>
+			<input type="text" name="nome"> <br><br>
+			<label> Telefone </label>
+			<input type="tel" name="telefone"> <br><br>
+			<label> E-mail </label>
+			<input type="email" name="email"> <br><br><br> <hr> <br>
+			<label> Usuário </label>
+			<input type="text" name="usuario"> <br>
+			<label> senha </label>
+			<input type="password" name="senha"> <br><br><br>
+
+			<input type="image" name="imagem" src="adicionar.png" id="btn-img">
+
+			<br>
+
+		</form>
+	</fieldset>
+</div>
+
+<footer id="roda1"> Rodapé 1 </footer>
+<footer id="roda2"> Rodapé 2 </footer>
+
+</body>
+
+
+
+</html>

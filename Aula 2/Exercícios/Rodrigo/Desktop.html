@@ -1,0 +1,165 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Exercício - Aula 2 </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+	img{
+		width: 400px;
+	}
+body{
+	background-color: lightsalmon;
+	width: 100vw;
+	height: 100vh;
+}
+
+.container{
+	/*background-color: lightgray;*/
+	width: 100vw;
+	height: 80vh;
+
+	display: grid;
+	grid-template-areas: "a b" "x y" "e d";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 4fr 1fr;
+}
+
+.f1{
+	grid-area: a;
+}
+
+.t1{
+	grid-area: b;
+}
+
+.f2{
+	grid-area: x;
+}
+
+.t2{
+	grid-area: y;
+}
+
+.f3{
+	grid-area: e;
+}
+
+.t3{
+	grid-area: d;
+}
+
+.f1,.f2,.f3{
+	margin-top: 50px;
+}
+.t1,.t2,.t3{
+ margin-left: -90px;
+ margin-right: 50px;
+ margin-top: 80px;
+ text-align: justify;
+}
+
+@media only screen and (min-width: 1024px),(max-width: 1080px){
+	.container{
+	/*background-color: lightgray;*/
+	width: 100vw;
+	height: 80vh;
+
+	display: grid;
+	grid-template-areas: "a b" "x y" "e d";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 4fr 1fr;
+}
+
+.f1{
+	grid-area: a;
+	
+}
+
+.t1{
+	grid-area: b;
+}
+
+.f2{
+	grid-area: x;
+}
+
+.t2{
+	grid-area: y;
+}
+
+.f3{
+	grid-area: e;
+}
+
+.t3{
+	grid-area: d;
+}
+
+.f1,.f2,.f3{
+	margin-top: 50px;
+}
+.t1,.t2,.t3{
+ margin-left: -90px;
+ margin-right: 50px;
+ margin-top: 80px;
+ text-align: justify;
+}
+}
+
+@media only screen and (max-width: 1080px){
+	.container{
+		grid-template-areas: "a" "b" "x" "y" "e" "d";
+		grid-template-columns: 1fr;
+	}	
+
+	.f1,.f2,.f3{
+		margin-left: 70px;
+		margin-top: 50px;
+	}
+
+	.t1,.t2,.t3{
+	 margin-left: 30px;
+	 margin-right: 50px;
+	 margin-top: 40px;
+	 text-align: justify;
+	}
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="f1">
+			<img src="img/Boeing 747.jpg">
+		</div>
+		<div class="t1"> 
+			<h3>Boeing 747 é uma aeronave a jato usada no âmbito civil e militar para transporte de passageiros e de carga, referida com frequência como Jumbo Jet ou Queen of the Skies (Rainha dos Céus). A sua corcunda na parte superior frontal da fuselagem faz com que seja uma das aeronaves mais reconhecíveis do mundo, sendo também a primeira do género produzida em massa. Fabricada pela Boeing nos Estados Unidos.</h3>
+		</div>
+
+		<div class="f2">
+			<img src="img/A380.jpg">
+		</div>
+		<div class="t2"> 
+			<h3>O Airbus A380 é uma aeronave widebody quadrimotor a jato para o transporte de passageiros, fabricado pela EADS Airbus. É o maior avião comercial do mundo. Os aeroportos em que opera tiveram suas instalações adaptadas para acomodá-lo com segurança. Inicialmente foi chamado de Airbus A3XX e projetado para desafiar o monopólio da Boeing no mercado de grandes aeronaves. O A380 fez seu primeiro voo em 27 de abril de 2005 e entrou em serviço comercial em outubro de 2007, com a Singapore Airlines.</h3>
+		</div>
+
+		<div class="f3">
+			<img src="img/A320.jpg">
+		</div>
+		<div class="t3"> 
+			<h3>Airbus A320 é uma família de aeronaves de fuselagem estreita bimotoras turbofan, desenvolvidas e fabricadas pela Airbus. São oferecidas pela fabricante as variantes A318, A319, A320 e A321, além a gama de aeronaves executivas.Em janeiro de 2017, um total de 7 442 aeronaves já haviam sido entregues, das quais 7 122 estavam em serviço, com 5 625 aeronaves encomendadas. É a família de aeronaves comerciais mais vendida do mundo, de acordo com registros de 2005 a 2007.</h3>
+		</div>
+	</div>
+
+</body>
+
+</html>

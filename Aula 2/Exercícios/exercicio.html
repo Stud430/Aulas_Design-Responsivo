@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Aula 2 </title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="2">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+img{
+	width: 200px;
+}
+
+
+body{
+	width: 100vw;
+	height: 100vh;
+}
+
+img{
+	float: left;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+
+}
+.container{
+	width: 110vw;
+	height: 80vh;
+
+	display: grid;
+	grid-template-areas: "h h" "nl";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 4fr 1fr;
+}
+
+
+
+.header{
+	background-color: lightblue;
+	height: 50vh;
+	color: black;
+	grid-area: h;
+}
+
+.nav-left{
+	background-color: lightgray;
+
+	margin-top: -150px;
+	margin-right: 15px;
+	padding: 25px;
+
+	font-family: verdana;
+	text-align: justify;
+
+	grid-area: l;
+}
+
+
+
+/* DESKTOP */
+@media only screen and (max-width:767px){
+	.container{
+		width: 250px;
+		grid-template-areas: "h" "nl";
+		grid-template-columns: 1fr;
+	}	
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px,max-width:1023px){
+	.container{
+		width: min(50%,90vw);
+		/*width: 20px;*/
+		grid-template-areas: "h h" "nl";
+		grid-template-columns: 1fr;
+	}	
+
+	.nav-left{
+	background-color: lightgray;
+
+	margin-top: -150px;
+	margin-right: 155px;
+
+	font-family: verdana;
+	text-align: justify;
+}
+}
+
+/* SMARTPHONE */ 
+@media only screen and (min-width:1024px){
+	.container{
+		width: 115vw;
+		height: 80vh;
+
+		grid-template-areas: "h h" "nl";
+		grid-template-columns: 1fr;
+	}	
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+		
+		<div class="nav-left">
+			<div class="header">   </div>
+			<img src="Steven Spielberg.jpg">
+		
+			<br>
+			Steven Allan Spielberg KBE OMRI (Cincinnati, 18 de dezembro de 1946) é um premiado cineasta, produtor cinematográfico, roteirista e empresário estadunidense. Spielberg é o diretor que tem mais filmes na lista dos 100 Melhores Filmes Americanos de Todos os Tempos, feita pelo American Film Institute. É considerado um dos cineastas mais populares e influentes da história do cinema. Até o momento, o rendimento bruto de todos os seus filmes, em todo o mundo, é de mais de US$ 8,5 bilhões de dólares.Steven Allan Spielberg KBE OMRI (Cincinnati, 18 de dezembro de 1946) é um premiado cineasta, produtor cinematográfico, roteirista e empresário estadunidense. Spielberg é o diretor que tem mais filmes na lista dos 100 Melhores Filmes Americanos de Todos os Tempos, feita pelo American Film Institute. É considerado um dos cineastas mais populares e influentes da história do cinema. Até o momento, o rendimento bruto de todos os seus filmes, em todo o mundo, é de mais de US$ 8,5 bilhões de dólares.Steven Allan Spielberg KBE OMRI (Cincinnati, 18 de dezembro de 1946) é um premiado cineasta, produtor cinematográfico, roteirista e empresário estadunidense. Spielberg é o diretor que tem mais filmes na lista dos 100 Melhores Filmes Americanos de Todos os Tempos, feita pelo American Film Institute. É considerado um dos cineastas mais populares e influentes da história do cinema. Até o momento, o rendimento bruto de todos os seus filmes, em todo o mundo, é de mais de US$ 8,5 bilhões de dólares.
+		</div>
+	</div>
+
+</body>
+
+</html>

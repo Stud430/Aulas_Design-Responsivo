@@ -1,0 +1,163 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Exercício - Aula 1 </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+	img{
+		width: 200px;
+	}
+body{
+	width: 100vw;
+	height: 100vh;
+}
+
+.container{
+	/*background-color: lightgray;*/
+	width: 100vw;
+	height: 80vh;
+
+	display: grid;
+	grid-template-areas: "a b" "x y" "e d";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 4fr 1fr;
+}
+
+.f1{
+	grid-area: a;
+}
+
+.t1{
+	grid-area: b;
+}
+
+.f2{
+	grid-area: x;
+}
+
+.t2{
+	grid-area: y;
+}
+
+.f3{
+	grid-area: e;
+}
+
+.t3{
+	grid-area: d;
+}
+
+.f1,.f2,.f3{
+	margin-top: 50px;
+}
+.t1,.t2,.t3{
+ margin-left: -90px;
+ margin-right: 50px;
+ margin-top: 80px;
+ text-align: justify;
+}
+
+@media only screen and (min-width: 651px,max-width: 1075px){
+	.container{
+	/*background-color: lightgray;*/
+	width: 100vw;
+	height: 80vh;
+
+	display: grid;
+	grid-template-areas: "a b" "x y" "e d";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 4fr 1fr;
+}
+
+.f1{
+	grid-area: a;
+}
+
+.t1{
+	grid-area: b;
+}
+
+.f2{
+	grid-area: x;
+}
+
+.t2{
+	grid-area: y;
+}
+
+.f3{
+	grid-area: e;
+}
+
+.t3{
+	grid-area: d;
+}
+
+.f1,.f2,.f3{
+	margin-top: 50px;
+}
+.t1,.t2,.t3{
+ margin-left: -90px;
+ margin-right: 50px;
+ margin-top: 80px;
+ text-align: justify;
+}
+}
+
+@media only screen and (max-width: 650px){
+	.container{
+		grid-template-areas: "a" "b" "x" "y" "e" "d";
+		grid-template-columns: 1fr;
+	}	
+
+	.f1,.f2,.f3{
+		margin-left: 70px;
+		margin-top: 50px;
+	}
+
+	.t1,.t2,.t3{
+	 margin-left: 30px;
+	 margin-right: 50px;
+	 margin-top: 40px;
+	 text-align: justify;
+	}
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="f1">
+			<img src="Steven Spielberg.jpg">
+		</div>
+		<div class="t1"> 
+			Steven Allan Spielberg KBE OMRI (Cincinnati, 18 de dezembro de 1946) é um premiado cineasta, produtor cinematográfico, roteirista e empresário estadunidense. Spielberg é o diretor que tem mais filmes na lista dos 100 Melhores Filmes Americanos de Todos os Tempos, feita pelo American Film Institute. É considerado um dos cineastas mais populares e influentes da história do cinema. Até o momento, o rendimento bruto de todos os seus filmes, em todo o mundo, é de mais de US$ 8,5 bilhões de dólares.
+		</div>
+
+		<div class="f2">
+			<img src="Quentin Tarantino.jpg">
+		</div>
+		<div class="t2"> 
+			Quentin Jerome Tarantino (Knoxville, 27 de março de 1963) é um diretor de cinema, roteirista, produtor, ator, diretor de fotografia e crítico de cinema americano. É vencedor de dois Oscars de Melhor Roteiro Original e foi eleito o 19° maior diretor de cinema dos últimos 25 anos segundo o levantamento da Quartz através do Metacritic.
+		</div>
+
+		<div class="f3">
+			<img src="Martin Scorsese.jpg">
+		</div>
+		<div class="t3"> 
+			Martin Scorsese (Queens, Nova Iorque, 17 de novembro de 1942) é um cineasta, produtor de cinema, roteirista e ator norte-americano vencedor do Oscar de melhor diretor por Os Infiltrados.
+		</div>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Aula 1 </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+<style>
+	img{
+		width: 200px;
+		/*margin-top: 100px;
+		margin-bottom: 80px;*/
+	}
+body{
+	width: 100vw;
+	height: 100vh;
+}
+
+.container{
+	background-color: lightgray;
+
+	display: grid;
+	grid-template-areas: "l r" "f f";
+	grid-template-columns: 1fr;
+	grid-template-rows:  1fr;
+}
+
+#nav-left{
+	background-color: green;
+	margin: auto;
+	float: left;
+	grid-area: l;
+}
+
+.nav-right{
+	background-color: red;
+	/*margin: auto; */
+	height: 140px;
+	margin-top: 250px;
+	margin-left: 15px;
+	margin-right: 15px;
+	text-align: justify;
+
+	grid-area: r;
+}
+.nav-segundo{
+	background-color: purple;
+	margin-top: 450px;
+	/*margin: auto;*/
+	float: right;
+	grid-area: r;
+}
+
+.footer{
+	background-color: blue;
+	grid-area: f;
+}
+
+@media only screen and (max-width:500px){
+	.container{
+		grid-template-areas: "l" "r" "f";
+		grid-template-columns: 1fr;
+	}	
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div id="nav-left">
+			<img src="Steven Spielberg.jpg">
+		</div>
+		<div class="nav-right">
+			Steven Allan Spielberg KBE OMRI (Cincinnati, 18 de dezembro de 1946) é um premiado cineasta, produtor cinematográfico, roteirista e empresário estadunidense. Spielberg é o diretor que tem mais filmes na lista dos 100 Melhores Filmes Americanos de Todos os Tempos, feita pelo American Film Institute. É considerado um dos cineastas mais populares e influentes da história do cinema. Até o momento, o rendimento bruto de todos os seus filmes, em todo o mundo, é de mais de US$ 8,5 bilhões de dólares.
+		</div>
+		
+		<div class="nav-left">
+			<img src="Quentin Tarantino.jpg">
+		</div>
+		<br>
+		<div class="nav-segundo"> 
+			Quentin Jerome Tarantino (Knoxville, 27 de março de 1963) é um diretor de cinema, roteirista, produtor, ator, diretor de fotografia e crítico de cinema americano. É vencedor de dois Oscars de Melhor Roteiro Original e foi eleito o 19° maior diretor de cinema dos últimos 25 anos segundo o levantamento da Quartz através do Metacritic.
+		</div>
+
+<br><br>
+
+		<div class="nav-left">
+			<img src="Martin Scorsese.jpg">	
+		</div>
+		<div class="nav-right">
+			Martin Scorsese (Queens, Nova Iorque, 17 de novembro de 1942) é um cineasta, produtor de cinema, roteirista e ator norte-americano vencedor do Oscar de melhor diretor por Os Infiltrados.
+		</div>
+	</div>
+
+</body>
+
+</html>

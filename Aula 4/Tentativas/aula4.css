@@ -1,0 +1,156 @@
+
+
+
+		*{
+			margin-left: 0;
+			padding: 0;
+			box-sizing: border-box;
+			/* incluir o preenchimento 
+			e a borda na largura e altura total de um elemento. */
+		}
+
+
+		body{
+			/*background-color: black;*/
+			display: flex;
+			align-items: center; /* especifica o alinhamento padrão 
+			para itens dentro de um flexbox ou contêiner de grade */
+			justify-content: center; 
+			/*	alinha os itens do contêiner flexível quando os 
+			itens não usam todo o espaço disponível no eixo 
+			principal (horizontalmente).	*/
+			min-height: 100vh;
+		}
+
+		fieldset{
+			/* Remove a borda. */
+			border:none;
+		}
+
+		fieldset:nth-child(2) {
+			/* Vai alinhar os elementos 
+			   um ao lado do outro. */
+			display: flex;
+		}
+
+		fieldset:nth-child(4) {
+			display: flex;
+
+			/* Adiciona margem na parte superior. */
+			padding-top: 20px;
+		}
+
+		fieldset:nth-child(5) {
+			display: flex;
+			width: 100%;
+			margin-top: 20px;
+			padding: 0px 10px;
+		}
+			
+
+		.container {
+			/* Tipo de método de posicionamento de um elemento (estático, relativo, fixo, absoluto ou aderente)
+
+			/* Definido como relative, indica que está 
+			   posicionado em relação à sua posição normal.
+
+			   Outro conteúdo não será ajustado para caber 
+			   em qualquer lacuna deixada pelo elemento.*/
+
+			/* relative - indica que esta posicionado
+			   em relação à sua posição normal. */
+			position: relative;
+		}
+
+			.container input {
+			margin: 10px 10px;
+
+			/* Define a largura do elemento. */
+			/*width: calc(100% - 20px);*/
+			width: 300px;
+
+			/* Defina a altura do elementos. */
+			height: 70px;
+
+			/* Remove a borda. */
+			border: none;
+
+			background-color: #ededed;
+			border-radius: 4px;
+			color: #333;
+
+			/* Tamanho da fonte.*/
+			font-size: 18px;
+
+			/* Aumenta a largura do contorno do texto.*/
+			font-weight: 700;
+
+			/* Gera espaço ao redor do conteúdo do elemento
+			   (superior, direito, inferior e esquerdo) */
+			padding: 14px 10px 0 10px;
+		}
+
+				.container label {
+			/* Tranforma o texto deixando todas as letras
+			   em maiúsculo. */
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: 700;
+			color: #9d9d9d;
+
+			/* Posiciona qualquer elemento de acordo com o 
+			   elemento pai, deixando de fazer parte do fluxo 
+			   comum do documento.*/
+			position: absolute;
+			
+			/* Defina a altura entre linha. */
+			line-height: 70px;
+
+			/* Posição vertical que necessita que o elemento 
+			   tenha uma posição determinada. */
+			top: 10px;
+
+			/* Distância da borda esquerda.*/
+			left: 20px;
+
+			/* Impede a seleção de texto.*/
+			user-select: none;
+
+			/* Se o elemento deve agir ou não a
+			   eventos do ponteiro. */
+			pointer-events: none;
+
+			/* Altera os valores das propriedades
+			   suavemente em um tempo determinado.*/
+			transition: 0.5s;
+		}
+
+/*
+	- Quando um <input type="text"> estiver em foco, 
+	  altere gradualmente a largura de 100px para 250px.
+
+	- Selecione e estilize somente se o valor do 
+	  elemento <input> for válido
+
+*/
+
+		.container input:focus ~ label,
+		.container input:valid ~ label {
+			left: 20px;
+			top: -10px;
+			color: #00acd7;
+		}
+
+		input[name=email]{
+		  /*width: 100px;*/
+		  transition: width .25s ease-in-out;
+		/*  transition: width .35s ease-in-out;*/
+		/* Especifica um efeito de transição com início e fim lentos. */
+		}
+		
+		input[name=email]:focus{
+		  width: 350px;
+		}
+
+
+		

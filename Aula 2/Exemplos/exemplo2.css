@@ -1,0 +1,151 @@
+
+		img{
+			margin-top: 180px;
+			width: 100px;
+		}
+
+		#img2{
+			float: right;
+		}
+
+		a{
+			margin-right: 30px;
+		}
+
+		.caixa{
+			background-color: lightgray;
+			width: 100vw;
+			height: 80vh;
+
+			display: grid;
+			grid-template-areas: "h" "p s t";
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr;
+		}
+
+		.footer1{
+			background-color: black;
+			/*color: white;*/
+			width: 100vw;
+			height: 80vh;
+			grid-area: h;
+		}
+		.footer2{
+			background-color: #D6D58E;
+			width: 100vw;
+			height: 10vh;
+
+			grid-area: m;
+		}
+
+		#l1{
+			grid-area: p;
+		}
+		#l2{
+			grid-area: s;
+		}
+		#l3{
+			grid-area: t;
+		}
+
+		@media only screen and (min-width: 361px,max-width: 1000px){
+			
+			.caixa{
+			/*	background-color: pink;*/
+				grid-template-areas: "h" "m";
+			}
+
+		.footer1{
+			/*background-color: black;*/
+			width: 100vw;
+			height: 80vh;
+		}
+		.footer2{
+			background-color: #D6D58E;
+			width: 100vw;
+			height: 15vh;
+		}
+
+
+			img{
+				width: 50px;
+				margin-left: 20px;
+				margin-top: 25px;
+			}
+
+			#img2{
+				margin-right: 40px;
+			}
+
+			#l1,#l2,#l3{
+				margin-top: -35px;
+			}
+
+		}
+
+		@media only screen and (max-width: 360px){
+			.caixa{
+			/*	background-color: pink;*/
+				grid-template-areas: "h" "m";
+			}
+
+			.footer1{
+				background-color: black;
+				width: 100vw;
+				height: 20vh;
+			}
+			.footer2{
+				background-color: #D6D58E;
+				width: 100vw;
+				height: 90vh;
+			}
+
+			img{
+				width: 50px;
+				margin-left: 20px;
+				margin-top: 25px;
+			}
+
+			#img2{
+				margin-right: 20px;
+			}
+
+			#l1,#l2,#l3{
+				margin-left: 108px;
+				margin-right: 100px;
+				/*margin: auto;*/
+			}
+		}
+
+		@media only screen and (min-width: 185px ,max-width: 190px){
+			.caixa{
+			/*	background-color: pink;*/
+				grid-template-areas: "h" "m";
+			}
+
+			.footer1{
+				/*background-color: black;*/
+				width: 100vw;
+				height: 10vh;
+			}
+			.footer2{
+				background-color: #D6D58E;
+				width: 100vw;
+				height: 90vh;
+			}
+
+			img{
+				width: 50px;
+				margin-left: 20px;
+				margin-top: 25px;
+			}
+
+			#img2{
+				margin-right: 20px;
+			}
+
+			#l1,#l2,#l3{
+				/*margin-left: 48px;*/
+				margin: auto; 
+			}
+		}

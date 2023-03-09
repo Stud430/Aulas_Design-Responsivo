@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>6</title>
+	<meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<style>
+	body { margin: 0; padding: 0; }
+nav { width: 100%; background: #333; float: left; padding: 10px 0px; }
+nav ul li { list-style: none; display: inline; }
+nav ul li a { padding: 10px; color: #F00; font: 1.3em Tahoma; }
+#menu, .menu {	display: none; }
+
+@media screen and (max-width: 480px) {
+
+	nav { display: none; }
+	#menu:checked ~ nav {
+		display: block;
+	}
+	.menu { display: block; background: #ccc; padding: 10px; float: right; }
+	nav ul { margin: 0; padding: 0; }
+	nav ul li { display: block; padding: 10px 0px; }
+	nav ul li a { width: 100%; float: left; text-align: center; }
+
+}
+</style>
+
+
+</head>
+
+<body>
+  <input type="checkbox" id="menu">
+  <label for="menu" class="menu"><i class="fa fa-bars"></i>
+  </label>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+   </nav>
+</body>
+
+
+
+
+</html>
+
+<!--
+https://gist.github.com/profburnes/5731c73c1687d8a0afc47563a0c7cd81
+-->	

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trabalho </title>
+<style>
+    body{
+        background-color: rgb(0, 255, 136);
+    }
+    .container{
+
+   
+
+    display: grid;
+    grid-template-areas: "l r" "f f";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+}
+    #principal{
+     
+       
+        border-radius: 10px;
+
+       
+    }
+    img{
+        margin-top: -120px;
+    width:300px;
+    height: 350px;
+    float: left;
+    border-radius: 10px;
+}
+h5{
+    
+    text-align: justify;
+    
+    margin-right: 50px;
+    font-size: 20px;
+}
+.nav-left{
+
+background-color: gray;
+grid-area: l;
+height: 300px;
+
+}
+.nav-right{
+
+
+grid-area: r;
+
+}
+.footer{
+
+
+grid-area: f;
+}
+@media only screen and (max-width: 767px){
+    .container{
+        grid-template-areas: "l" "r" "f";
+        grid-template-columns: 1fr;
+    }
+}
+    
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+   
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-areas: "l" "r" "f";
+    }
+} 
+@media only screen and (min-width: 1024px){
+    .container{
+        grid-template-areas: "l" "r" "f";
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+      
+    <div class="container">
+    
+    <div id="principal">
+
+
+
+    
+
+     <div class="nav-left">  adad </div>
+
+            <br><br><br><br><br><br><br>
+
+
+     <div class="nav-right">
+        <picture> 
+            <img src="Quentin Tarantino.jpg">
+         </picture>
+         </div>
+
+
+<div class="footer">   <h5> Steven Allan Spielberg KBE OMRI (Cincinnati, 18 de dezembro de 1946[2]) é um premiado cineasta, produtor cinematográfico, roteirista e empresário estadunidense. Spielberg é o diretor que tem mais filmes na lista dos 100 Melhores Filmes Americanos de Todos os Tempos, feita pelo American Film Institute.
+    É considerado um dos cineastas mais populares e influentes da história do cinema.[3] Até o momento, o rendimento bruto de todos os seus filmes, em todo o mundo, é de mais de US$ 8,5 bilhões de dólares. A Forbes calcula a riqueza de Spielberg em US$ 3,6 bilhões de dólares. </h5>
+    </div>
+
+ 
+</div>
+
+</body>
+
+</html>
